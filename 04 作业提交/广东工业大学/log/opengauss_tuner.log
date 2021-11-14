@@ -1,0 +1,25 @@
+[11-14 10:28:31] {xtuner.py:87} INFO - Starting... (mode: recommend)
+[11-14 10:28:31] {transport.py:1819} INFO - Connected (version 2.0, client OpenSSH_7.8)
+[11-14 10:28:31] {transport.py:1819} INFO - Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+[11-14 10:28:31] {transport.py:1819} INFO - Authentication (password) successful!
+[11-14 10:28:32] {db_agent.py:203} ERROR - Cannot execute SQL statement: SELECT now();. Error message: failed to connect Unknown:5432..
+[11-14 10:28:32] {main.py:260} ERROR - Failed to login to the database. Check whether the database is started. 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/openGauss_xtuner-2.1.0-py3.7.egg/tuner/main.py", line 258, in main
+    return procedure_main(mode, db_info, config)
+  File "/usr/local/lib/python3.7/site-packages/openGauss_xtuner-2.1.0-py3.7.egg/tuner/xtuner.py", line 88, in procedure_main
+    db_agent = new_db_agent(db_info)
+  File "/usr/local/lib/python3.7/site-packages/openGauss_xtuner-2.1.0-py3.7.egg/tuner/db_agent.py", line 53, in new_db_agent
+    host_user_pwd=db_info['host_user_pwd'])
+  File "/usr/local/lib/python3.7/site-packages/openGauss_xtuner-2.1.0-py3.7.egg/tuner/db_agent.py", line 90, in __init__
+    self.check_connection_params()
+  File "/usr/local/lib/python3.7/site-packages/openGauss_xtuner-2.1.0-py3.7.egg/tuner/db_agent.py", line 127, in check_connection_params
+    raise DBStatusError("Failed to login to the database. "
+tuner.exceptions.DBStatusError: Failed to login to the database. Check whether the database is started. 
+[11-14 10:31:50] {xtuner.py:87} INFO - Starting... (mode: recommend)
+[11-14 10:31:50] {transport.py:1819} INFO - Connected (version 2.0, client OpenSSH_7.8)
+[11-14 10:31:50] {transport.py:1819} INFO - Auth banner: b'\nAuthorized users only. All activities may be monitored and reported.\n'
+[11-14 10:31:50] {transport.py:1819} INFO - Authentication (password) successful!
+[11-14 10:31:51] {db_agent.py:290} INFO - change knob: [statement_timeout=0]
+[11-14 10:31:52] {xtuner.py:103} INFO - Configurations: {'logfile': 'log/opengauss_tuner.log', 'output_tuning_result': 'tuned_knobs.json', 'verbose': True, 'recorder_file': 'log/recorder.csv', 'tune_strategy': 'gop', 'drop_cache': True, 'used_mem_penalty_term': 1e-09, 'rl_algorithm': 'ddpg', 'rl_model_path': 'model/rl.model', 'rl_steps': 100, 'max_episode_steps': 10, 'test_episode': 1, 'gop_algorithm': 'bayes', 'max_iterations': 100, 'particle_nums': 3, 'benchmark_script': 'period', 'benchmark_path': '', 'benchmark_cmd': '', 'benchmark_period': 60, 'scenario': 'ap', 'tuning_list': ''}.
+[11-14 10:31:58] {xtuner.py:168} INFO - X-Tuner is executed and ready to exit. Please refer to the log for details of the execution process.

@@ -1,0 +1,90 @@
+{
+    "default_statistics_target": {
+        "default": null,
+        "max": 1000,
+        "min": 100,
+        "recommend": "1000",
+        "restart": false,
+        "type": "int"
+    },
+    "effective_cache_size": {
+        "default": null,
+        "max": 21602940,
+        "min": 212800,
+        "recommend": "21602940",
+        "restart": false,
+        "type": "int"
+    },
+    "effective_io_concurrency": {
+        "default": null,
+        "max": 250,
+        "min": 150,
+        "recommend": "200",
+        "restart": false,
+        "type": "int"
+    },
+    "enable_mergejoin": {
+        "default": null,
+        "max": 1,
+        "min": 0,
+        "recommend": "off",
+        "restart": false,
+        "type": "bool"
+    },
+    "enable_nestloop": {
+        "default": null,
+        "max": 1,
+        "min": 0,
+        "recommend": "off",
+        "restart": false,
+        "type": "bool"
+    },
+    "max_connections": {
+        "default": null,
+        "max": 740,
+        "min": 24,
+        "recommend": "370",
+        "restart": true,
+        "type": "int"
+    },
+    "max_prepared_transactions": {
+        "default": null,
+        "max": 740,
+        "min": 24,
+        "recommend": "370",
+        "restart": true,
+        "type": "int"
+    },
+    "max_process_memory": {
+        "default": null,
+        "max": 28803920,
+        "min": 22403048,
+        "recommend": "28803920",
+        "restart": true,
+        "type": "int"
+    },
+    "random_page_cost": {
+        "default": null,
+        "max": 2.0,
+        "min": 1.0,
+        "recommend": "1.0",
+        "restart": false,
+        "type": "float"
+    },
+    "shared_buffers": {
+        "default": null,
+        "max": 244720,
+        "min": 212804,
+        "recommend": "212800",
+        "restart": true,
+        "type": "int"
+    },
+    "wal_buffers": {
+        "default": null,
+        "max": 6650,
+        "min": 2048,
+        "recommend": "6650",
+        "restart": true,
+        "type": "int"
+    }
+}
